@@ -30,7 +30,7 @@ set(JSONRPC_PATTERNS "*.json" CACHE STRING "Patterns matching files for which js
 
 message(STATUS "Setting up ${PROJECT_NAME} v${VERSION}")
 
-find_package(WPEFramework)
+find_package(WPEFramework NAMES WPEFramework Thunder)
 find_package(CompileSettingsDebug CONFIG REQUIRED)
 find_package(ProxyStubGenerator REQUIRED)
 find_package(JsonGenerator REQUIRED)
